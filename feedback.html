@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ECO Technology Solutions - Free Bootstrap 4 Template by Colorlib</title>
+	<title>ECO Technology Solutions</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,9 +34,6 @@
 							<a href="https://www.facebook.com/ECOSolutionsPakistan/"
 								class="d-flex align-items-center justify-content-center"><span
 									class="fa fa-facebook "><i class="sr-only ">Facebook</i></span></a>
-							<!-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
 						</p>
 					</div>
 				</div>
@@ -55,10 +52,8 @@
 					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-					<!-- <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li> -->
 					<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-					<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-					<li class="nav-item active"><a href="feedback.html" class="nav-link">FeedBack</a></li>
+					<li class="nav-item active"><a href="feedback.html" class="nav-link">Login Page</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,9 +66,9 @@
 			<div class="row no-gutters slider-text align-items-end">
 				<div class="col-md-9 ftco-animate pb-5">
 					<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i
-									class="fa fa-chevron-right"></i></a></span> <span>FeedBack <i
+									class="fa fa-chevron-right"></i></a></span> <span>Post a job <i
 								class="fa fa-chevron-right"></i></span></p>
-					<h1 class="mb-0 bread">FeedBack</h1>
+					<h1 class="mb-0 bread">Post a Job</h1>
 				</div>
 			</div>
 		</div>
@@ -91,7 +86,7 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										<p><span>Address:</span>61-C, 24TH STREET, TAUHEED COMMERCIAL AREA, PHASE 5,
+										<p><span>Address: </span>61-C, 24TH STREET, TAUHEED COMMERCIAL AREA, PHASE 5,
 											DHA, Karachi, Pakistan-75500</p>
 									</div>
 								</div>
@@ -106,112 +101,113 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-md-3">
-								<div class="dbox w-100 text-center">
-									<div class="icon d-flex align-items-center justify-content-center">
-										<span class="fa fa-paper-plane"></span>
-									</div>
-									<div class="text">
-										<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-										</p>
-									</div>
-								</div>
-							</div> -->
-							<!-- <div class="col-md-3">
-								<div class="dbox w-100 text-center">
-									<div class="icon d-flex align-items-center justify-content-center">
-										<span class="fa fa-globe"></span>
-									</div>
-									<div class="text">
-										<p><span>Website</span> <a href="#">yoursite.com</a></p>
-									</div>
-								</div>
-							</div> -->
 						</div>
 						<div class="row no-gutters">
 							<div class="col-md-7">
 								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Contact Us</h3>
+									<h3 class="mb-4">Post a Job</h3>
 									<div id="form-message-warning" class="mb-4"></div>
 									<div id="form-message-success" class="mb-4">
-										Your message was sent, thank you!
+
 									</div>
-									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+									<form method="POST" id="contactForm" action="function.php" name="contactForm"
+										class="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="name">Full Name</label>
 													<input type="text" class="form-control" name="name" id="name"
-														placeholder="Name">
+														placeholder="Name" required>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="email">Email Address</label>
 													<input type="email" class="form-control" name="email" id="email"
-														placeholder="Email">
+														placeholder="Email" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject"
-														placeholder="Subject">
+													<label class="label" for="cleaning">Which type of Cleaning you
+														want</label>
+													<div class="select-wrap">
+														<select name="cleaning" id="cleaning" class="form-control">
+															<option value="cleaning">Select Services</option>
+															<option value="Office Cleaning">Office Cleaning</option>
+															<option value="Carpet Cleaning">Carpet Cleaning</option>
+															<option value="Kitchen Cleaning">Kitchen Cleaning</option>
+															<option value="Window Cleaning">Window Cleaning</option>
+														</select>
+													</div>
 												</div>
 											</div>
+
+
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="#">Message</label>
-													<textarea name="message" class="form-control" id="message" cols="30"
-														rows="4" placeholder="Message"></textarea>
+													<label class="label" for="sqft">Select Your Sq. ft Area</label>
+													<div class="select-wrap">
+														<select name="sqft" id="sqft" required class="form-control">
+															<option value="10" selected>Select sq. ft</option>
+															<option value="20" >500 sq.ft - 1000 sq.ft</option>
+															<option value="30" >1500 sq.ft - 2000 sq.ft</option>
+															<option value="40" >2000 sq.ft - 2500 sq.ft</option>
+															<option value="50" >2500 sq.ft - 3000 sq.ft</option>
+															<option value="60" >3000 sq.ft - 3500 sq.ft</option>
+															<option value="70" >3500 sq.ft - 4000 sq.ft</option>
+															<option value="80" >4000 sq.ft - 4500 sq.ft</option>
+															<option value="90" >4500 sq.ft - 5000 sq.ft</option>
+															
+															</select>
+													</div>
 												</div>
 											</div>
+
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="price">Price</label>
+													<textarea required name="price" class="form-control" id="price"
+														cols="30" rows="4" placeholder="Your Invoice"  ></textarea>
+												</div>
+											</div>
+
 											<div class="col-md-12">
 												<div class="form-group">
 													<input type="submit" value="Send Message" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
 											</div>
+											<div class="col-md-12">
+												<div class="alert alert-success page-success" style="display: none">
+												</div>
+												<div class="alert alert-danger page-danger" style="display: none"></div>
+											</div>
 										</div>
-									</form>
 								</div>
+								</form>
 							</div>
-							<div class="col-md-5 d-flex align-items-stretch">
-								<div class="info-wrap w-100 p-5 img"
-									style="background-image: url(images/contactimage.jpg);">
-								</div>
+						</div>
+						<div class="col-md-5 d-flex align-items-stretch">
+							<div class="info-wrap w-100 p-5 img"
+								style="background-image: url(images/contactimage.jpg);">
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="col-md-12">
-					<div id="map" class="map"></div>
-				</div> -->
 			</div>
+		</div>
 		</div>
 	</section>
 
-	<!-- <section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-8 py-4">
-					<div class="row">
-						<div class="col-md-6 ftco-animate d-flex align-items-center">
-							<h2 class="mb-0" style="color:white; font-size: 24px;">Subcribe to our Newsletter</h2>
-						</div>
-						<div class="col-md-6 d-flex align-items-center">
-							<form action="#" class="subscribe-form">
-								<div class="form-group d-flex">
-									<input type="text" class="form-control" placeholder="Enter email address">
-									<input type="submit" value="Subscribe" class="submit px-3">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	<script>
+		var drop = document.getElementById("sqft");
+        var price = document.getElementById("price");
+        drop.onchange = function() {
+        price.innerHTML = "$" + drop.value;
+}
+	</script>
 
 	<footer class="footer ftco-section">
 		<div class="container">
@@ -223,37 +219,10 @@
 						the toxic and hash chemicals for the people who care and wanted their share in developing a
 						better and sustainable world.</p>
 					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-						<!-- <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li> -->
 						<li class="ftco-animate"><a href="https://www.facebook.com/ECOSolutionsPakistan/"><span
 									class="fa fa-facebook"></span></a></li>
-						<!-- <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li> -->
 					</ul>
 				</div>
-				<!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-					<h2 class="footer-heading">Latest News</h2>
-					<div class="block-21 mb-4 d-flex">
-						<a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
-						<div class="text">
-							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-							<div class="meta">
-								<div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-								<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-								<div><a href="#"><span class="icon-chat"></span> 19</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="block-21 mb-4 d-flex">
-						<a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
-						<div class="text">
-							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-							<div class="meta">
-								<div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
-								<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-								<div><a href="#"><span class="icon-chat"></span> 19</a></div>
-							</div>
-						</div>
-					</div>
-				</div> -->
 				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
 					<h2 class="footer-heading">Quick Links</h2>
 					<ul class="list-unstyled">
@@ -261,9 +230,7 @@
 						<li><a href="about.html" class="py-1 d-block">About</a></li>
 						<li><a href="services.html" class="py-1 d-block">Services</a></li>
 						<li><a href="pricing.html" class="py-1 d-block">Pricing</a></li>
-						
-						<!-- <li><a href="#" class="py-1 d-block">Works</a></li>
-						<li><a href="#" class="py-1 d-block">Blog</a></li> -->
+
 						<li><a href="feedback.html" class="py-1 d-block">FeedBack</a></li>
 					</ul>
 				</div>
@@ -275,8 +242,6 @@
 									COMMERCIAL AREA, PHASE 5, DHA, Karachi, Pakistan-75500</span></li>
 							<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">0321 4662747
 									</span></a></li>
-							<!-- <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-										class="text">info@yourdomain.com</span></a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -285,13 +250,11 @@
 				<div class="col-md-12 text-center">
 
 					<p class="copyright">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
 						is made <i class="fa fa-heart" aria-hidden="true"></i> by <a
 							href="https://www.facebook.com/muhammadfahad.khokhar.712" target="_blank">Muhammad Fahad
 							Kokhar</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
 			</div>
@@ -324,5 +287,37 @@
 	<script src="js/main.js"></script>
 
 </body>
+
+
+
+<script>
+	$(document).ready(function () {
+
+		$('body').on('submit', '#contactForm', function (e) {
+			e.preventDefault();
+			var form = $(this);
+			var url = form.attr('action');
+
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: form.serialize(),
+				success: function (data) {
+					obj = JSON.parse(data);
+					if (obj.status == 1) {
+						console.log(obj.status)
+						console.log(obj.msg)
+						$('.page-success').html('<span>' + obj.msg + '</span>').show().delay(5000).fadeOut();
+					}
+					if (obj.status == 0) {
+						$('.page-danger').html('<span>' + obj.msg + '</span>').show().delay(5000).fadeOut();
+					}
+
+				}
+			});
+		});
+	});
+
+</script>
 
 </html>
